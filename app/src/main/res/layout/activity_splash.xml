@@ -8,26 +8,37 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/bgawal"
         tools:context=".SplashActivity">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImageProfile"
+            android:layout_marginLeft="8dp"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/list"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@color/colorPrimary"/>
+
     <TextView
-            android:layout_width="match_parent"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang Di Halaman Umi"
-            android:textColor="#FFFF"
+            android:text="Selamat Datang Di Halaman Jadwal Kuliah dan Profil Umi"
+            android:textColor="@color/colorPrimary"
             android:paddingTop="20dp"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:gravity="center"/>
 
     <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:gravity="center"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:text="Mulai"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:id="@+id/btnStart"/>
 
